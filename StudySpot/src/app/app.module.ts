@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { LoginPageComponent } from './login-page/login-page.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,8 +26,10 @@ import { LoginPageComponent } from './login-page/login-page.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
+    MatFormFieldModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
