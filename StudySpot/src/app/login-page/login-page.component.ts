@@ -1,18 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
+import {FormControl, Validators} from '@angular/forms';
+
+
 
 @Component({
   selector: 'loginPage',
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.css']
 })
-export class LoginPageComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
-  
+export class LoginPageComponent {
+ 
+  hide = true;
+  email = new FormControl('', [Validators.required, Validators.email]);
 
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
+    return this.email.hasError('email') ? 'Not a valid email' : '';
+
+}
 }
