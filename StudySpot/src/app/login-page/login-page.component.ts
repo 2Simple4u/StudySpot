@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SignupPageComponent } from '../signup-page/signup-page.component';
 import {FormControl, Validators,FormGroup,FormBuilder} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { UserServiceService } from '../user-service.service';
@@ -7,7 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
-  selector: 'loginPage',
+  selector: 'login-page',
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.css']
 })
