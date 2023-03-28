@@ -32,6 +32,13 @@
                     <input formControlName="confirmPassword" type="text" placeholder="Confirm your password" required>
                 </div>
             </div>
+            <mat-form-field class="date" appearance="fill">
+                <mat-label class="date">Enter Date of Birth</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <!-- <mat-hint class="date" class="date">MM/DD/YYYY</mat-hint> -->
+                <mat-datepicker-toggle class="date" matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker class="date"></mat-datepicker>
+              </mat-form-field>
             <div class="button">
                 <input type="submit" value="SIGNUP">
             </div>

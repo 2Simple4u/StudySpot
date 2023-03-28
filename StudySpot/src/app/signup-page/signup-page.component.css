@@ -151,3 +151,8 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
+
+.date{
+  color: white;
+  /* background-color: white; */
+}
