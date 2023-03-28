@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { LoginPageComponent } from './login-page/login-page.component';
+<<<<<<< HEAD
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { CarouselModule } from './carousel/carousel.module';
@@ -18,6 +19,13 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
+=======
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar'
+>>>>>>> e2a668141dde0a938c88b791b5b5800498f6fcc7
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +46,14 @@ import { AboutUsComponent } from './about-us/about-us.component';
     MatSidenavModule,
     MatToolbarModule,
     MatInputModule,
+<<<<<<< HEAD
     CarouselModule
+=======
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
+    MatSnackBarModule
+>>>>>>> e2a668141dde0a938c88b791b5b5800498f6fcc7
   ],
   providers: [],
   bootstrap: [AppComponent]
