@@ -19,7 +19,6 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { LoginComponent } from './login/login.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +29,6 @@ import { LoginComponent } from './login/login.component'
     SignupPageComponent,
     AboutUsComponent,
     LoginPageComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +43,8 @@ import { LoginComponent } from './login/login.component'
     CarouselModule,
     MatSnackBarModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
