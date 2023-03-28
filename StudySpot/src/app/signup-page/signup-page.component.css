@@ -12,13 +12,15 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #9b59b6, black, #9b59b6);
+  /* background: linear-gradient(135deg, #9b59b6, black, #9b59b6); */
+  background-color: black;
 }
 .container{
   max-width: 700px;
   width: 100%;
   /* background: linear-gradient(135deg, #71b7e6, #9b59b6, #20B2AA); */
   /* background-color: #fff; */
+  background: linear-gradient(135deg, #9b59b6, black, #9b59b6);
   color: #fff;
   padding: 25px 30px;
   border-radius: 5px;
