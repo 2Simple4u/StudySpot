@@ -1,8 +1,10 @@
 .container{
     display: flex;
-    padding: 20px;
+    padding: 10px;
     background-color: black;
     color: white;
+    margin: 0px;
+    height: 7%;
     
 }
 .icon:hover{

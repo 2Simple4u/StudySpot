@@ -1,28 +1,29 @@
-// class loginData{
+class loginData{
 
 
-//     userName: String;
-//     password: String;
-
-//     public setUserName(p_UserName : string) {
-//         this.userName = p_UserName;
-//     }
-
-//     public getUserName() : string {
-//         return this.userName;
-//     }
-
-//     public setPassword(p_Password : string) {
-//         this.password = p_Password;
-//     }
-
-//     public getPassword() : string {
-//         return this.password;
-//     }
+    userName?: String;
+    password?: String;
 
 
+    public setUserName(userName : string) {
+        this.userName = userName;
+    }
 
+     public getUserName() : any {
+        return this.userName as string;
+    }
+
+    public setPassword(password : string) {
+        this.password = password;
+    }
+
+    public getPassword() : any {
+         this.password as string;
+    }
 
 
 
-// }
+
+
+
+}

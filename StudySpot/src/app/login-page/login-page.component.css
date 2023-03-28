@@ -17,6 +17,7 @@
 h1 {
 	font-weight: bold;
 	margin: 0;
+	padding-bottom: 10px;
 }
 .example-container mat-form-field + mat-form-field {
     margin-left: 8px;
@@ -178,4 +179,23 @@ input {
     border-right-width: 0px;
     border-top-width: 0px;
     padding-bottom: 0px;
+}
+
+.newUser{
+	display: flex;
+	margin-top:8px;
+}
+
+
+.newUser > a{
+	margin: 0;
+    padding: 2px;
+	
+}
+.newUser > a:hover{
+	color:#f44336
+}
+
+.mat-form-field-flex{
+	padding-left: 10px;
 }
