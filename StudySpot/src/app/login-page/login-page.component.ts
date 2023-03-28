@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
-
+import { SignupPageComponent } from '../signup-page/signup-page.component';
 
 
 @Component({
