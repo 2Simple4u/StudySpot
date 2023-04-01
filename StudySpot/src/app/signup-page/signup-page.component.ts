@@ -9,6 +9,7 @@ import { CustomvalidationService } from '../services/customvalidation.service';
 export class SignupPageComponent implements OnInit {
 
   registerForm:FormGroup;
+  hide = true;
 
   constructor(private fb:FormBuilder, private customValidator: CustomvalidationService) {
     this.registerForm = this.fb.group({

@@ -2,40 +2,51 @@
          -- roles - as a dropdown--- . Student 
                              . teacher -->
 <div class="main-container">
-<div class="container">
-    <div class="title">Welcome To StudySpot</div>
-    <div class="content">
-        <form action="#" [formGroup]="registerForm">
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Full Name</span>
-                    <input formControlName="name" type="text" placeholder="Enter your name" required>
+    <div class="container">
+        <div class="title">Welcome To StudySpot</div>
+        <div class="content">
+            <form action="#" [formGroup]="registerForm">
+                <div class="user-details">
+                    <mat-form-field class="input-box" appearance="outline">
+                        <mat-label class="details">Full Name</mat-label>
+                        <input matInput formControlName="name" type="text" placeholder="Enter your name">
+                    </mat-form-field>
+                    <mat-form-field class="input-box" appearance="outline">
+                        <mat-label class="details">Username</mat-label>
+                        <input matInput formControlName="username" type="text" placeholder="Enter your username">
+                    </mat-form-field>
+                    <mat-form-field class="input-box" appearance="outline">
+                        <mat-label class="details">Email</mat-label>
+                        <input matInput formControlName="email" type="email" placeholder="Enter your email">
+                    </mat-form-field>
+                    <mat-form-field class="input-box" appearance="outline">
+                        <mat-label class="details">Phone Number</mat-label>
+                        <input matInput formControlName="contactNo" placeholder="Enter your number">
+                    </mat-form-field>
+                    <mat-form-field class="input-box" appearance="fill">
+                        <mat-label class="details">Password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" placeholder="Enter your password">
+                    </mat-form-field>
+                    <mat-form-field class="input-box" appearance="fill">
+                        <mat-label class="details">Confirm Password</mat-label>
+                        <input matInput formControlName="confirmPassword" placeholder="Confirm your password">
+                    </mat-form-field>
+                    <mat-form-field class="" appearance="fill">
+                        <mat-label class="">Enter Date of Birth</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <!-- <mat-hint class="date" class="date">MM/DD/YYYY</mat-hint> -->
+                        <mat-datepicker-toggle class="" matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker class=""></mat-datepicker>
+                    </mat-form-field>
                 </div>
-                <div class="input-box">
-                    <span class="details">Username</span>
-                    <input formControlName="username" type="text" placeholder="Enter your username" required>
+                <div class="button">
+                    <input type="submit" value="SIGNUP">
+                    <div class="existUser">
+                        <p>Already have an account ? <a routerLink="/login">Login</a></p>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <span class="details">Email</span>
-                    <input formControlName="email" type="text" placeholder="Enter your email" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Phone Number</span>
-                    <input formControlName="contactNo" type="text" placeholder="Enter your number" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Password</span>
-                    <input formControlName="password" type="text" placeholder="Enter your password" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input formControlName="confirmPassword" type="text" placeholder="Confirm your password" required>
-                </div>
-            </div>
-            <div class="button">
-                <input type="submit" value="SIGNUP">
-            </div>
-        </form>
+                
+            </form>
+        </div>
     </div>
-</div>
 </div>

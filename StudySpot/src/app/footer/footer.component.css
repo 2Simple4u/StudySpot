@@ -49,13 +49,13 @@
   
   .copyright{
     padding: 1.55rem;
-    background-color: LavenderBlush;
-    color: black;
+    /* background-color: LavenderBlush;
+    color: black; */
     /* font-weight: bold; */
   }
   
   .copyright-link{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
   }
   
